@@ -1,0 +1,11 @@
+Section 1: Introduction
+- support and chat are on Gitter
+	https://gitter.im/Colt/TheWebDeveloperBootcamp
+- notes from syllabus review
+	* coding starts in HTML and CSS units
+	* Bootstrap is a CSS and JS framework
+	* HTML and CSS make things look good
+	* JavaScript is everything else (provides action)
+	* When we get to the Backend section, we'll start using command line for everything else in the course
+	* YelpCamp will be a bigger project with lots of growth throughout the course to combine everything together
+	* Refactoring is moving around and rewriting code so that it's cleaner/shorter/more modular

@@ -1,0 +1,48 @@
+Section 2: Introduction to Front End
+- Set up Environment
+	* Chrome as a browser
+		- common for development
+		- provides standard for the course
+- Internet Basics
+	* IP Address is like the street address (unique)
+	* DNS is like the name of the business
+	* HTTP requests
+		- user sends a request to a website
+		- the request is sent to a server, which looks up the IP address for the request
+		- request is sent to the correct IP address, often through multiple hubs
+		- At the correct IP address, the server recieving the request figures out everything that needs to be sent to the user and creates a combination of HTML, CSS, and JavaScript (often pulling data from a database)
+		- The server then breaks this down into several smaller packets to send back to the user through multiple routes simultaneously
+		- The packets are sent back to the user and reassembled in the proper order
+	* View Page Source
+		- shows HTML, CSS, and JavaScript for a page
+		- ctrl + u
+		- right click -> view page source
+- Front End Basics
+	* Stuff you see and interact with when you look at a webpage
+	* "client side"
+	* ALWAYS includes HTML, usually includes CSS and JavaScript
+	* HTML
+		- "nouns" of a webpage
+		- defines structure
+		- describe what you want
+		- required for EVERY webpage
+	* CSS
+		- "adjectives" of a webpage
+		- defines style
+		- must be used with HTML
+	* JavaScript
+		- "verbs" of a webpage
+		- adds logic and interactivity
+- Back End Basics
+	* Everything else
+	* "server side"
+	* lots of options
+		- Web Server
+		- Applications
+		- PHP
+		- Database
+		- MongoDB
+		- Python
+		- Ruby on Rails
+		- Apache
+		- Etc. ...
