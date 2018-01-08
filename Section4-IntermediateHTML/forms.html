@@ -14,8 +14,22 @@
 
 	<!-- <form action="http://wikipedia.org" method="GET"> -->
 	<form action="http://wikipedia.org">
-		<input name="username" type="text" placeholder="username">
-		<input name="password" type="password" placeholder="password">
+		<!-- <label>
+			Username:
+			<input name="username" type="text" placeholder="username">
+		</label>
+
+		<label>
+			Password:
+			<input name="password" type="password" placeholder="password">
+		</label> -->
+
+		<label for="email">E-mail:</label>
+		<input id="email" type="email" placeholder="email" required>
+
+		<label>Password:</label>
+		<input id="password" type="password" placeholder="password" required>
+		
 		<input type="submit">
 	</form>
 
