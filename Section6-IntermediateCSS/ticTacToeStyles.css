@@ -19,3 +19,10 @@ td:nth-of-type(1), td:nth-of-type(2){
 tr:nth-of-type(3) td{
 	border-bottom: none;
 }
+
+/*This could also be done a number of was, including
+	- assigning the center row and columns classes
+	- having line 19 be tr:nth-of-type(1) td, tr:nth-of-type(2) td,
+		then setting the border-left to 1px solid black
+	- having line 19 be tr:nth-of-type(2) td, then setting
+		the top and bottom border to 1px solid black*/
