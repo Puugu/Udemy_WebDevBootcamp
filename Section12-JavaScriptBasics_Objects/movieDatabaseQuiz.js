@@ -21,11 +21,18 @@ var filmLibrary = [
 	}
 ];
 
-filmLibrary.forEach(function(film){
-	if(film.hasWatched === true){
-		console.log("You have watched \""+film.title+"\" - "+film.rating+" stars");
-	}
-	else{
-		console.log("You have not seen \""+film.title+"\" - "+film.rating+" stars");
-	}
+filmLibrary.forEach(function(movie){
+	console.log(buildSentence(movie));
 });
+
+function buildSentence(film){
+	var result = "You have ";
+	if(film.hasWatched === true){
+		result +="watched ";
+	}
+	else {
+		result +="not seen ";
+	}
+	result+=("\""+film.title+"\" - "+film.rating+" stars");
+	return result;
+}
