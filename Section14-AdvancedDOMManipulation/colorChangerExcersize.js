@@ -2,7 +2,7 @@ var button = document.querySelector("button");
 var isClicked = false;
 
 button.addEventListener("click", function(){
-	document.querySelector("body").classList.toggle("clicked");
+	document.body.classList.toggle("clicked");
 });
 
 button.addEventListener("click", function(){
