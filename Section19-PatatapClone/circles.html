@@ -5,11 +5,21 @@
 	<link rel="stylesheet" type="text/css" href="circles.css">
 	<script type="text/javascript" src="paper-full.js"></script>
 	<script type="text/paperscript" canvas="myCanvas">
+		var circles =[];
 		function onKeyDown(event) {
 			var maxPoint=new Point(view.size.width, view.size.height);
 			var randPoint = Point.random(); //generates point with x-y coordinates between 0 and 1
 			var newPoint = maxPoint*randPoint;
-				new Path.Circle(new Point(newPoint), 10).fillColor="orange";
+			var newCircle = new Path.Circle(new Point(newPoint), 500);
+			newCircle.fillColor="orange";
+			circles.push(newCircle);
+		}
+
+		function onFrame(event){
+			for (var i=0; i<circles.length;i++){
+				circles[i].fillColor.hue+=1;
+				circles[i].scale(.9);
+			}
 		}
 	</script>
 </head>
