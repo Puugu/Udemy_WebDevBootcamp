@@ -8,6 +8,21 @@ h1{
 	font-weight: normal;
 }
 
+span{
+	background-color: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0px;
+	display: inline-block;
+	transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	opacity: 0;
+}
+
 ul{
 	list-style: none;
 	margin: 0;
@@ -16,6 +31,9 @@ ul{
 
 body{
 	font-family: Roboto;
+	background: #2BC0E4;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 li{
@@ -35,6 +53,7 @@ input{
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	color: #2980b9;
+	border: 3px solid rgba(0,0,0,0);
 }
 
 #container{
@@ -49,8 +68,21 @@ input{
 	text-decoration:line-through;
 }
 
+.fa-plus{
+	float: right;	
+}
+
+.fa-trash{
+
+}
+
 li:nth-child(2n){
 	background-color: #f7f7f7;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
 }
 
 input:focus{

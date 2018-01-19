@@ -19,6 +19,6 @@ $("input[type='text']").keypress(function(event){
 		//clear out the input
 		$(this).val("");
 		//create a new li and add to ul
-		$("ul").append("<li><span class=\"deleteMe\">X</span> "+toDoText+"</li>");
+		$("ul").append("<li><span class=\"deleteMe\"><i class=\"fa fa-trash\"></i></span> "+toDoText+"</li>");
 	}
 })
