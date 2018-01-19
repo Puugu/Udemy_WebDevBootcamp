@@ -22,3 +22,8 @@ $("input[type='text']").keypress(function(event){
 		$("ul").append("<li><span class=\"deleteMe\"><i class=\"fa fa-trash\"></i></span> "+toDoText+"</li>");
 	}
 })
+
+//toggle the add new to-do input field when plus symbol is clicked
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+})
